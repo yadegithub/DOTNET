@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "937602982312",
+    
+    "project_id": "pfe1-77e8d",
+    "storage_bucket": "pfe1-77e8d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937602982312:android:464bb3d1d7869d8d457d9d",
+        "android_client_info": {
+          "package_name": "com.example.flextrip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937602982312-ctb5f45qoib5ubujqprrpdai8rd0oi66.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flextrip",
+            "certificate_hash": "268627cf54c10c91ee7802ee1f641520b4234bfc"
+          }
+        },
+        {
+          "client_id": "937602982312-umpc9btbu8917g7669hbv21oktdvnl0h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkt1gsP14VLUOXaXW0DTirPw_13RbKRvg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "937602982312-2qc2hdl59lv6dup7el6496ojnotf1f4e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
