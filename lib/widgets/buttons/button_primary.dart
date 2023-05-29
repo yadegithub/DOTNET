@@ -17,6 +17,7 @@ class ButtonPrimary extends StatelessWidget {
     this.prefixIcon,
     this.suffixIcon,
     this.onTap,
+    this.onpressed,
     this.padding,
     this.margin,
     this.isLoading = false,
@@ -35,6 +36,7 @@ class ButtonPrimary extends StatelessWidget {
   final Widget? prefixIcon;
   final Widget? suffixIcon;
   final Function()? onTap;
+  final Function()? onpressed;
   final EdgeInsets? padding;
   final EdgeInsets? margin;
   final bool enabled;

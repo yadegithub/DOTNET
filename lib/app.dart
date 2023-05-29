@@ -12,11 +12,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:get/get.dart';
 
 start() {
+  
   Get.put(UtilityController());
-  runApp(const App());
+  runApp(ProviderScope(child: const App()));
 }
 
 class App extends StatefulWidget {
@@ -52,7 +54,7 @@ class _AppState extends State<App> {
       builder: (context, child) {
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'Airpedia',
+          title: 'Flextrip',
           theme: AppStyle.appTheme(0xFF5C40CC, Colors.white),
           builder: (context, child) {
             return MediaQuery(
@@ -86,5 +88,7 @@ class _AppState extends State<App> {
         );
       },
     );
+   
   }
+  
 }

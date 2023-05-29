@@ -63,7 +63,7 @@ class UtilityController extends GetxController {
         Locale(value['language_code'], value['country_code']),
       );
     } else {
-      await Get.updateLocale(const Locale('en', 'US'));
+      await Get.updateLocale(const Locale('en', 'US',));
     }
   }
 

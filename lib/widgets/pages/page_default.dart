@@ -28,6 +28,7 @@ class PageDefault extends StatelessWidget {
       backgroundColor: backgroundColor,
       appBar: AppBar(
         shadowColor: shadowColor,
+        backgroundColor: Color(0xFF26A69A),
         title: SizedBox(
           width: Get.width,
           child: Text(

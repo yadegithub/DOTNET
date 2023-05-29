@@ -39,18 +39,35 @@ class TabHistory extends GetView<HistoryController> {
                         padding: EdgeInsets.zero,
                         itemCount: controller.listHistoryTransaction.length,
                         itemBuilder: (context, index) {
-                          return Padding(
-                            padding: EdgeInsets.only(
-                              top: index == 0 ? 10.w : 0,
-                              bottom: index ==
-                                      controller.listHistoryTransaction.length -
-                                          1
-                                  ? 65.w
-                                  : 0.w,
-                            ),
-                            child: HistoryItem(
-                              data: controller.listHistoryTransaction[index],
-                            ),
+                          return Column(
+                            children: [
+                              Padding(
+                                padding: EdgeInsets.only(
+                                  top: index == 0 ? 10.w : 0,
+                                  bottom: index ==
+                                          controller.listHistoryTransaction.length -
+                                              1
+                                      ? 65.w
+                                      : 0.w,
+                                ),
+                                child: HistoryItem(
+                                  data: controller.listHistoryTransaction[index],
+                                ),
+                              ),
+                               Padding(
+                                padding: EdgeInsets.only(
+                                  top: index == 0 ? 10.w : 0,
+                                  bottom: index ==
+                                          controller.listHistoryTransaction.length -
+                                              1
+                                      ? 65.w
+                                      : 0.w,
+                                ),
+                                child: HistoryItem(
+                                  data: controller.listHistoryTransaction[index],
+                                ),
+                              ),
+                            ],
                           );
                         },
                       )

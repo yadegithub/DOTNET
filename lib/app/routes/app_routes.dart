@@ -9,6 +9,7 @@ abstract class Routes {
   static const UNDER_DEVELOPMENT = _Paths.UNDER_DEVELOPMENT;
   static const SPLASH_SCREEN = _Paths.SPLASH_SCREEN;
   static const HOME = _Paths.HOME;
+   static const IntroductionScreen = _Paths.IntroductionScreen;
   static const API_LOG = _Paths.API_LOG;
   static const LOGIN = _Paths.LOGIN;
   static const ONBOARDING = _Paths.ONBOARDING;
@@ -30,6 +31,7 @@ abstract class _Paths {
   static const UNDER_DEVELOPMENT = '/under-development';
   static const SPLASH_SCREEN = '/splash-screen';
   static const HOME = '/home';
+   static const String IntroductionScreen = '/introductionScreen';
   static const API_LOG = '/api-log';
   static const LOGIN = '/login';
   static const ONBOARDING = '/onboarding';

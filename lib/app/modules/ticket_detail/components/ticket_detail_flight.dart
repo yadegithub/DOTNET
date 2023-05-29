@@ -16,7 +16,8 @@ class TicketDetailFlight extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return Container();
+     Padding(
       padding: EdgeInsets.symmetric(horizontal: Insets.xs),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -159,3 +160,5 @@ class TicketDetailFlight extends StatelessWidget {
     );
   }
 }
+  
+  

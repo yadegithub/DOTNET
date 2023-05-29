@@ -1,3 +1,4 @@
+import 'package:flextrip/app/modules/Dashborder/veiw/Dashborder.dart';
 import 'package:flextrip/app/modules/home/controllers/home_controller.dart';
 import 'package:flextrip/app/modules/home/tab/tab_history.dart';
 import 'package:flextrip/app/modules/home/tab/tab_home.dart';
@@ -43,8 +44,9 @@ class HomeView extends GetView<HomeController> {
         body: PageView(
           controller: controller.pageController,
           physics: const NeverScrollableScrollPhysics(),
-          children: const [
-            TabHome(),
+          children:  [
+            Dashborder(),
+            
             TabTicket(),
             TabHistory(),
             TabSetting(),

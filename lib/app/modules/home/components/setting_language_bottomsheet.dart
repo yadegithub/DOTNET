@@ -24,8 +24,9 @@ class SettingLanguageBottomsheet extends GetView<SettingController> {
           ...controller.cUtility.appLanguageOptions.map((item) {
             return SettingLanguageItem(
               label: item.language == 'ID'
-                  ? 'Bahasa (Indonesia)'
+                  ? 'Arabic (Mouritania)'
                   : 'English (United States)',
+                  
               isSelected: item.language ==
                   controller.cUtility.appLanguage.value.language,
               onTap: () {

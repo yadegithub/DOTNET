@@ -1,3 +1,4 @@
+import 'package:flextrip/app/modules/Dashborder/veiw/Dashborder.dart';
 import 'package:flextrip/app/modules/api_log/bindings/api_log_binding.dart';
 import 'package:flextrip/app/modules/api_log/views/api_log_view.dart';
 import 'package:flextrip/app/modules/blocked_view.dart';
@@ -7,6 +8,7 @@ import 'package:flextrip/app/modules/edit_profile/bindings/edit_profile_binding.
 import 'package:flextrip/app/modules/edit_profile/views/edit_profile_view.dart';
 import 'package:flextrip/app/modules/home/bindings/home_binding.dart';
 import 'package:flextrip/app/modules/home/views/home_view.dart';
+
 import 'package:flextrip/app/modules/login/bindings/login_binding.dart';
 import 'package:flextrip/app/modules/login/views/login_view.dart';
 import 'package:flextrip/app/modules/onboarding/bindings/onboarding_binding.dart';
@@ -36,6 +38,11 @@ class AppPages {
   AppPages._();
 
   static final routes = [
+     
+    //   GetPage(
+    //   name: _Paths.IntroductionScreen,
+    //   page: () =>  IntroductionScreen(),
+    // ),
     GetPage(
       name: _Paths.BLOCKED,
       page: () => const BlockedView(),
@@ -48,9 +55,11 @@ class AppPages {
       name: _Paths.SPLASH_SCREEN,
       page: () => const SplashScreenView(),
     ),
+    // widget.animationController.forward();
+    
     GetPage(
       name: _Paths.HOME,
-      page: () => const HomeView(),
+      page: () =>  HomeView(),
       binding: HomeBinding(),
     ),
     GetPage(
