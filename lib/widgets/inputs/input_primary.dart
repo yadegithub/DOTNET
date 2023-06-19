@@ -12,6 +12,7 @@ class InputPrimary extends StatefulWidget {
     this.prefixIcon,
     this.suffixIcon,
     this.color,
+  
     this.textColor = Colors.black,
     this.margin,
     this.padding,
@@ -62,6 +63,7 @@ class InputPrimary extends StatefulWidget {
   final TextStyle? errorTextStyle;
   final TextInputType? keyboardType;
   final int maxLength;
+  
   final ValueSetter<String>? onChanged;
   final TextCapitalization textCapitalization;
   final bool obsecureText;

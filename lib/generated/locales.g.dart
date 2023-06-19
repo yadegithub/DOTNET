@@ -420,6 +420,9 @@ class Locales {
       'Travlog!':'ترافلوج!',
       // 'Flight':'رحلة جوية',
       // 'Feel freedom':'اشعر بالحرية',
+      'your ticket':'تذكرتك',
+      'thank your for purchase! \nSave your ticket belowe':'شكرا لشرائك وفر تذكرتك',
+      'Explore':'استكشاف',
         'Car Rental':'إيجار سيارة',
          'Around the city':'حول المدينة',
            'Trains':'تدريبات',
@@ -427,7 +430,7 @@ class Locales {
               'Let\'s Start':'لنبدأ',
                'Hotel':'فندق',
                   'Lets comfortob':'«دع الراحة',
-                   'Explore':'استكشاف',
+                   //'Explore':'استكشاف',
                    'book now':" احجز الآن",
                    '530 hotels found':'530 فندقًا',
                     'Filter':'تصفية',
@@ -589,6 +592,7 @@ class Locales {
     'history': 'History',
     'setting': 'Setting',
     'active': 'Active',
+    'Explore':'explore',
     'complete': 'Complete',
     'dontHaveTicket': 'You don\'t have ticket.',
     'dontHaveCompletedFlight': 'You don\'t have completed flight.',
@@ -623,7 +627,7 @@ class Locales {
     'best_hotel_deals':'best_hotel_deals' ,
     'find_deals_for_any':'find_deals_for_any',
     'Feel freedom':'Feel' ,
-   'Explore':'استكشاف'
+   //'Explore':'Explore'
   };
    
 }

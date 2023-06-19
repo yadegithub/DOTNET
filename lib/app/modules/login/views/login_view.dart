@@ -1,5 +1,7 @@
 import 'package:flextrip/app/models/app_language_model.dart';
 import 'package:flextrip/app/modules/login/controllers/login_controller.dart';
+import 'package:flextrip/app/modules/login/controllers/login_with_facbook.dart';
+import 'package:flextrip/app/modules/login/controllers/login_with_googel.dart';
 import 'package:flextrip/app/routes/app_pages.dart';
 import 'package:flextrip/styles/colors.dart';
 import 'package:flextrip/styles/styles.dart';
@@ -67,6 +69,83 @@ class LoginView extends GetView<LoginController> {
                     onTap: controller.login,
                     isLoading: controller.isLoading.value,
                     enabled: controller.isValidForm.value,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+
+                      GestureDetector(
+                        onTap: (){
+                           Navigator.push(context,
+                   MaterialPageRoute(builder: (context)=> 
+                 LoginWitheFacbook()
+                    
+                                      ));
+                        },
+      child: Padding(
+        padding: const EdgeInsets.only(right: 20,left: 20),
+        child: Container(
+          width: 60,
+          height: 60,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            color: Colors.white,
+            boxShadow: const [
+              BoxShadow(
+                color: Colors.black26,offset: Offset(0,2),blurRadius: 0.6
+              ),
+            ],
+            image: DecorationImage(
+              image: AssetImage('assets/images/facebook.png'),
+            )
+          ),
+        ),
+      ),
+    ),
+      GestureDetector(
+          onTap: (){
+                           Navigator.push(context,
+                   MaterialPageRoute(builder: (context)=> 
+                 LoginWithGoogel()
+                    
+                                      ));
+                        },
+      child: Container(
+        width: 60,
+        height: 60,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          color: Colors.white,
+          boxShadow: const [
+            BoxShadow(
+              color: Colors.black26,offset: Offset(0,2),blurRadius: 0.6
+            ),
+          ],
+          image: DecorationImage(
+            image: AssetImage('assets/images/google.jpg'),
+          )
+        ),
+      ),
+    ),
+      GestureDetector(
+      child: Container(
+        width: 60,
+        height: 60,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          color: Colors.white,
+          boxShadow: const [
+            BoxShadow(
+              color: Colors.black26,offset: Offset(0,2),blurRadius: 0.6
+            ),
+          ],
+          image: DecorationImage(
+            image: AssetImage('assets/images/google.jpg'),
+          )
+        ),
+      ),
+    ),
+                    ],
                   ),
                   SizedBox(
                     width: double.infinity,

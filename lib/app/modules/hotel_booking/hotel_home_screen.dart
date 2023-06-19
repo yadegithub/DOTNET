@@ -7,8 +7,10 @@ import 'package:flextrip/app/modules/hotel_booking/model/hotel_list_data.dart';
 import 'package:flextrip/app/modules/hotel_booking/model/room_data.dart';
 import 'package:flextrip/app/modules/hotel_booking/room%20detail.dart';
 import 'package:flextrip/app/modules/hotel_booking/room_pop_up_view.dart';
+
 import 'package:flextrip/app/modules/hotel_booking/time_date_view.dart';
 import 'package:flextrip/app/modules/hotel_booking/utils/helper.dart';
+import 'package:flextrip/app/modules/nearby_hotels/test_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:intl/intl.dart';
@@ -49,7 +51,12 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
     animationController?.dispose();
     super.dispose();
   }
-
+  late List<HotelListData> hotelLists = List.from(hotelList);
+void updatelists(String value){
+  setState(() {
+  hotelLists=  hotelList.where((element) => element.titleTxt.toLowerCase().contains(value.toLowerCase())).toList();
+  });
+}
   @override
   Widget build(BuildContext context) {
     return Theme(
@@ -105,12 +112,12 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                           color:
                               HotelAppTheme.buildLightTheme().backgroundColor,
                           child: ListView.builder(
-                            itemCount: hotelList.length,
+                            itemCount: hotelLists.length,
                             padding: const EdgeInsets.only(top: 8),
                             scrollDirection: Axis.vertical,
                             itemBuilder: (BuildContext context, int index) {
                               final int count =
-                                  hotelList.length > 10 ? 10 : hotelList.length;
+                                  hotelLists.length > 10 ? 10 : hotelLists.length;
                               final Animation<double> animation =
                                   Tween<double>(begin: 0.0, end: 1.0).animate(
                                       CurvedAnimation(
@@ -122,10 +129,10 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                               return HotelListView(
                                 callback: () {
                           Navigator.push(context,
-                 MaterialPageRoute(builder: (context)=>  RoomBookingScreen(hotelName:hotelList[index].titleTxt)
+                 MaterialPageRoute(builder: (context)=>  RoomBookingScreen(hotelName:hotelLists[index].titleTxt)
                                     ));
                                 },
-                                hotelData: hotelList[index],
+                                hotelData: hotelLists[index],
                                 animation: animation,
                                 animationController: animationController!,
                               );
@@ -166,11 +173,11 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                   return const SizedBox();
                 } else {
                   return ListView.builder(
-                    itemCount: hotelList.length,
+                    itemCount: hotelLists.length,
                     scrollDirection: Axis.vertical,
                     itemBuilder: (BuildContext context, int index) {
                       final int count =
-                          hotelList.length > 10 ? 10 : hotelList.length;
+                          hotelLists.length > 10 ? 10 : hotelLists.length;
                       final Animation<double> animation =
                           Tween<double>(begin: 0.0, end: 1.0).animate(
                               CurvedAnimation(
@@ -183,10 +190,10 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                        HotelListView(
                         callback: () {
                             Navigator.push(context,
-                 MaterialPageRoute(builder: (context)=>  RoomBookingScreen(hotelName:hotelList[index].titleTxt.tr)
+                 MaterialPageRoute(builder: (context)=>  RoomBookingScreen(hotelName:hotelLists[index].titleTxt.tr)
                                     ));
                         },
-                        hotelData: hotelList[index],
+                        hotelData: hotelLists[index],
                         animation: animation,
                         animationController: animationController!,
                       );
@@ -388,7 +395,7 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                       padding: const EdgeInsets.only(
                           left: 16, right: 16, top: 4, bottom: 4),
                       child: TextField(
-                        onChanged: (String txt) {},
+                        onChanged: (value)=>updatelists(value),
                         style: const TextStyle(
                           fontSize: 18,
                         ),
@@ -647,7 +654,16 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                       borderRadius: const BorderRadius.all(
                         Radius.circular(32.0),
                       ),
-                      onTap: () {},
+                      onTap: () {
+
+                                   Navigator.push(context,
+                  MaterialPageRoute(builder: (context)=> 
+                // //  TicketHomePage()
+              ///   OrderSuccessView()
+                SplashScreen()
+                                      ));
+                      //  SplashScreen
+                      },
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Icon(FontAwesomeIcons.locationDot),

@@ -11,7 +11,7 @@ var mtravelogcontent=GoogleFonts.inter(
   fontSize: 10,fontWeight: FontWeight.w500,color: Color(0xFFFFFFFF)
 );
 var mtravelingplaces=GoogleFonts.inter(
-  fontSize: 16,fontWeight: FontWeight.w500,color: Colors.deepPurple.shade900
+  fontSize: 16,fontWeight: FontWeight.w500,color: Color(0xFF26A69A)
 );
 var mservicetitel=GoogleFonts.inter(
   fontSize: 12,fontWeight: FontWeight.w500,color: Color(0XFF23374D)

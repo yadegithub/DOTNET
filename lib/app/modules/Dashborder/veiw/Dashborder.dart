@@ -2,6 +2,7 @@
 
 import 'package:flextrip/app/models/recommended_places.dart';
 import 'package:flextrip/app/modules/Dashborder/components/customappbar.dart';
+import 'package:flextrip/app/modules/home/components/home_header.dart';
 import 'package:flextrip/app/modules/home/tab/tab_home.dart';
 
 import 'package:flextrip/app/modules/home/views/home_view.dart';
@@ -12,6 +13,8 @@ import 'package:flextrip/app/modules/hotel_booking/hotel_detailes/HomeScreen.dar
 import 'package:flextrip/app/modules/hotel_booking/hotel_detailes/sub_collection.dart';
 import 'package:flextrip/app/modules/hotel_booking/hotel_home_screen.dart';
 import 'package:flextrip/app/modules/nearby_hotels/test_screen.dart';
+import 'package:flextrip/app/modules/test/core/theme/app_color.dart';
+import 'package:flextrip/app/modules/transport%20locale/HomeW.dart';
 
 
 
@@ -22,7 +25,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
-
+import 'package:flextrip/app/modules/Guide de voyage/main.dart';
 
 
 class Dashborder extends StatefulWidget {
@@ -110,335 +113,721 @@ late AnimationController _animationController;
      BuildContext myContext = context; // Get the context of the current widget
    
     return Scaffold(
-      
-      // appBar: AppBar(
-      //   //backgroundColor: Mbackgroundcolor,
-      //   title:SvgPicture.asset('assets/icons/apple_box.svg') ,
-      //   elevation: 0,
-      // ),
-      
-    //  backgroundColor: Mbackgroundcolor,
-      
-    body: Container(
-      
-      child: ListView(
-        physics: ClampingScrollPhysics(),
-        children:<Widget> [
-          SizedBox(height: 12),
-          CustomAppBar(),
-          SizedBox(height: 12),
-          // Padding(padding: EdgeInsets.only(left: 16,right:24,bottom: 12),
-          // child: Text('Hi, Mintmalainin  this promos for you',style: mtravelingtitle,),
-          // ),
-          Container(
-            alignment: Alignment.centerLeft,
-            margin: EdgeInsets.only(left: 16,right: 16),
-            width: MediaQuery.of(context).size.width,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: <Widget>[
-                Container(
-                  width: MediaQuery.of(context).size.width,
-                   padding: EdgeInsets.all(16.0),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10)
-                  ),
-                  height: 190,
-                  child: Image.asset('assets/slider_3.png'),
-                )
-                         
-                      
-              ,
-                SizedBox(height: 18,),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: <Widget>[
-                    Row(
-                      children: map<Widget>(recommendedplaces,(index,image){
-                        return Container(
-                          alignment: Alignment.centerLeft,
-                          height: 6,
-                          width: 6,
-                          margin: EdgeInsets.only(right: 8),
-                          padding: EdgeInsets.only(right: 10,left: 10),
-                          decoration: BoxDecoration(
-                            shape: BoxShape.circle,
-                            color: _current ==index
-                            ?Color(0XFF2C53B1)
-                            :Colors.grey
-                          ),
-                        );
-                      }),
-                    ),
-                    //more
-                    Text('More...',style: mtravelingplaces,)
-                  ],
-                )
-              ],
-            ),
-          )
-       ,//service section
-       SizedBox(height: 12,),
-       Padding(padding: EdgeInsets.only(left: 16,right:24,bottom: 12),
-          child: Text('Let\'s Start'.tr,style: mtravelingtitle,),
-          ),
-          Container(
-            height: 144,
-            margin: EdgeInsets.only(left: 16,right: 16),
-            child: Column(
-              children: <Widget>[
-                Row(
-                  children: <Widget>[
-                   
-                  
-                        GestureDetector(
-                          onTap: (){
-                             Navigator.push(context,
-                 MaterialPageRoute(builder: (context)=> 
-                // HomeScreens()
-              //  FirebaseSearchScreen()
-             // SplashScreen()
-            // HomeView()
-                   HomeExploreScreen(
-            animationController: _animationController,
-              )
-                                    ));
-                          },
-                          
-                           child: Expanded(
-                             child: Container(
-                                                   margin: EdgeInsets.only(right: 8),
-                                                   padding: EdgeInsets.only(left: 16),
-                                                   height: 64,
-                                                   decoration: BoxDecoration(
-                             // color: Color(0xFFFFFFFF),
-                              borderRadius: BorderRadius.circular(12),
-                              border: Border.all(color: Color(0xFFE8E8F3),width: 1),
-                                                 
-                                                   ),
-                                                   child: Row(
-                              children: <Widget>[
-                                
-                                     Image.asset('assets/icons/bus1.png',
-                                    
-                                  
-                                                              
-                                    fit: BoxFit.cover,
-                                    ),
-                                  
-                                
-                               // Image.asset('assets/icons/flight.png',
-                                // width: 64,
-                                // height: 64,
-                                
-                               // ),
-                                Padding(padding: EdgeInsets.only(left: 16),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                 children: <Widget>[
-                                  Text('Flight'.tr,style: mservicetitel,),
-                                  Text('Feel freedom'.tr,style: mservicesubtitel,)
-                                 ],
-                                ),
-                                )
-                                
-                              ],
-                                                   ),
-                                              ),
-                           ),
-                         ),
-                         GestureDetector(
-                          onTap: (){
-                            
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context)=>
-                      //     MotelApp()
-                      TabHome()
-                                    ));
-                          },
-                           child: Expanded(
-                             child: Container(
-                                                   margin: EdgeInsets.only(right: 8),
-                                                   padding: EdgeInsets.only(left: 16),
-                                                   height: 64,
-                                                   decoration: BoxDecoration(
-                             // color: Color(0xFFFFFFFF),
-                              borderRadius: BorderRadius.circular(12),
-                              border: Border.all(color: Color(0xFFE8E8F3),width: 1),
-                                                 
-                                                   ),
-                                                   child: Row(
-                              children: <Widget>[
-                                
-                                     Image.asset('assets/icons/plane1.png',
-                                     
-                                                             
-                                    
-                                    ),
-                                  
-                                
-                                Padding(padding: EdgeInsets.only(left: 16),
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                 children: <Widget>[
-                                  Text('Trains'.tr,style: mservicetitel,),
-                                  Text('Security'.tr,style: mservicesubtitel,)
-                                 ],
-                                ),
-                                )
-                                
-                              ],
-                                                   ),
-                                              ),
-                           ),
-                         ),
-                      
-                      
-                  ],
+    body: Flex(
+       direction: Axis.vertical,
+      children: [
+        const HomeHeader(),
+      Container(
+        
+        child: SingleChildScrollView(
+       //   physics: ClampingScrollPhysics(),
+          child: Column(
+            children: [
+              SizedBox(height: 10,),
+              Container(
+                margin: EdgeInsets.only(left: 16,right: 16,),
+             width: MediaQuery.of(context).size.width,
+             height: 200,
+             
+             decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors:[
+                // AppColor.myColor,
+                Color(0xFF26A69A),
+                 Color(0xFFB2DFDB)
+                 ],
+                 begin: Alignment.bottomLeft,
+                 end: Alignment.centerRight
                 ),
-                SizedBox(height: 16,),
-                 Row(
-                  children: <Widget>[
+                
+         //   color: Colors.red,
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(10),
+              bottomLeft: Radius.circular(10),
+              bottomRight: Radius.circular(10),
+              topRight: Radius.circular(80)
+            ),
+            boxShadow:[
+              BoxShadow(
+                     offset: Offset(5, 10),
+                blurRadius: 10,
+                color: Colors.white38.withOpacity(0.2)
+             ),
+            ] 
+             ),
+            child: Container(
+              padding: EdgeInsets.only(left: 20,top: 25,right: 20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('Next  workout',style: TextStyle(fontSize: 16,color: Colors.white),
+                  ),
+                  SizedBox(height: 5,),
+                   Text('Logs Toning',style: TextStyle(fontSize: 25,color: Colors.white)),
+                 SizedBox(height: 5,),
+                   Text('and Glutes workout',style: TextStyle(fontSize: 25,color: Colors.white),
+                  ),
+                  SizedBox(height: 25,),
+                  Row(
+                  //  crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      Row(
+                        children: [
+                          Icon(Icons.timer,size: 20,color: Colors.white,),
+                          SizedBox(width: 10,),
+                          Text('60 min',style: TextStyle(fontSize: 14,color: Colors.white),
+                  ),
+                        
+                        ],
+                      ),
+                      Expanded(child: Container()),
+                       Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(60),
+                          boxShadow:[
+                            BoxShadow(
+                              color: Color(0xFF26A69A),
+                              blurRadius: 10,
+                              offset: Offset(4, 8)
+                            )
+                          ]
+                        ),
+                         child: Icon(Icons.play_circle_fill,
+                                         color: Colors.white,
+                                         size: 60,
+                                         ),
+                       ),
+                    SizedBox(height: 5,)
+
+                    ],
+                    
+                  ),
+                ],
+              ),
+            ),
+              ),
+ SizedBox(height: 18,),
+         Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+           children: [
+             Padding(padding: EdgeInsets.only(left: 16,right:24,bottom: 12),
+                child: Text('Let\'s Start'.tr,style: mtravelingtitle,),
+                ),
+           ],
+         ),
+         SizedBox(height: 5,),
+            Container(
+              height: 144,
+              margin: EdgeInsets.only(left: 16,right: 16),
+              child: Column(
+                children: <Widget>[
+              //     Row(
+              //       children: <Widget>[
+                     
+                    
+              //             GestureDetector(
+              //               onTap: (){
+              //                  Navigator.push(context,
+              //      MaterialPageRoute(builder: (context)=> 
+              //     // HomeScreens()
+              //   //  FirebaseSearchScreen()
+              //  // SplashScreen()
+              // // HomeView()
+              //        HomeExploreScreen(
+              // animationController: _animationController,
+              //   )
+              //                         ));
+              //               },
+                            
+              //                child: Expanded(
+              //                  child: Container(
+              //                                        margin: EdgeInsets.only(right: 8),
+              //                                        padding: EdgeInsets.only(left: 16),
+              //                                        height: 64,
+              //                                        decoration: BoxDecoration(
+              //                  // color: Color(0xFFFFFFFF),
+              //                   borderRadius: BorderRadius.circular(12),
+              //                   border: Border.all(color: Color(0xFFE8E8F3),width: 1),
+                                                   
+              //                                        ),
+              //                                        child: Row(
+              //                   children: <Widget>[
+                                  
+              //                          Image.asset('assets/icons/bus1.png',
+                                      
+                                    
+                                                                
+              //                         fit: BoxFit.cover,
+              //                         ),
+                                    
+                                  
+              //                    // Image.asset('assets/icons/flight.png',
+              //                     // width: 64,
+              //                     // height: 64,
+                                  
+              //                    // ),
+              //                     Padding(padding: EdgeInsets.only(left: 16),
+              //                     child: Column(
+              //                       mainAxisAlignment: MainAxisAlignment.center,
+              //                       crossAxisAlignment: CrossAxisAlignment.start,
+              //                      children: <Widget>[
+              //                       Text('Flight'.tr,style: mservicetitel,),
+              //                       Text('Feel freedom'.tr,style: mservicesubtitel,)
+              //                      ],
+              //                     ),
+              //                     )
+                                  
+              //                   ],
+              //                                        ),
+              //                                   ),
+              //                ),
+              //              ),
+              //              GestureDetector(
+              //               onTap: (){
+                              
+              //           Navigator.push(context,
+              //               MaterialPageRoute(builder: (context)=>
+              //           //     MotelApp()
+              //           TabHome()
+              //                         ));
+              //               },
+              //                child: Expanded(
+              //                  child: Container(
+              //                                        margin: EdgeInsets.only(right: 8),
+              //                                        padding: EdgeInsets.only(left: 16),
+              //                                        height: 64,
+              //                                        decoration: BoxDecoration(
+              //                  // color: Color(0xFFFFFFFF),
+              //                   borderRadius: BorderRadius.circular(12),
+              //                   border: Border.all(color: Color(0xFFE8E8F3),width: 1),
+                                                   
+              //                                        ),
+              //                                        child: Row(
+              //                   children: <Widget>[
+                                  
+              //                          Image.asset('assets/icons/plane1.png',
+                                       
+                                                               
+                                      
+              //                         ),
+                                    
+                                  
+              //                     Padding(padding: EdgeInsets.only(left: 16),
+              //                     child: Column(
+              //                       mainAxisAlignment: MainAxisAlignment.center,
+              //                       crossAxisAlignment: CrossAxisAlignment.start,
+              //                      children: <Widget>[
+              //                       Text('Trains'.tr,style: mservicetitel,),
+              //                       Text('Security'.tr,style: mservicesubtitel,)
+              //                      ],
+              //                     ),
+              //                     )
+                                  
+              //                   ],
+              //                                        ),
+              //                                   ),
+              //                ),
+              //              ),
+                        
+                        
+              //       ],
+              //     ),
+              
+                 // SizedBox(height: 16,),
+                   Row(
+                    children: <Widget>[
+                     
+                    
+                           GestureDetector(
+                           onTap: (){
+                              
+                        Navigator.push(context,
+                             MaterialPageRoute(builder: (context)=>
+                        //     MotelApp()
+                         TabHome()
+                         //MapSample()
+                                      ));
+                          },
+                             child: Expanded(
+                               child: Container(
+                                                     margin: EdgeInsets.only(right: 8),
+                                                     padding: EdgeInsets.only(left: 16),
+                                                     height: 64,
+                                                     decoration: BoxDecoration(
+                              //  color: Color(0xFFFFFFFF),
+                                borderRadius: BorderRadius.circular(12),
+                                border: Border.all(color: Color(0xFFE8E8F3),width: 1),
+                                                   
+                                                     ),
+                                                     child: Row(
+                                children: <Widget>[
+                                  Image.asset('assets/icons/flight.png',
+                                
+                                  
+                                  ),
+                                  Padding(padding: EdgeInsets.only(left: 16),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                   children: <Widget>[
+                                    Text('flights'.tr,style: mservicetitel,),
+                                    Text('Lets comfortob'.tr,style: mservicesubtitel,)
+                                   ],
+                                  ),
+                                  )
+                                  
+                                ],
+                                                     ),
+                                                ),
+                             ),
+                           ),
+                           GestureDetector(
+                              onTap: (){
+                               Navigator.push(context,
+                   MaterialPageRoute(builder: (context)=> 
+                  // HomeScreens()
+                //  FirebaseSearchScreen()
+               // SplashScreen()
+             // HomeView()
+                     HomeExploreScreen(
+              animationController: _animationController,
+                )
+                                      ));
+                            },
+                             child: Expanded(
+                               child: Container(
+                                                     margin: EdgeInsets.only(right: 8),
+                                                     padding: EdgeInsets.only(left: 16),
+                                                     height: 64,
+                                                     decoration: BoxDecoration(
+                               // color: Color(0xFFFFFFFF),
+                                borderRadius: BorderRadius.circular(12),
+                                border: Border.all(color: Color(0xFFE8E8F3),width: 1),
+                                                   
+                                                     ),
+                                                     child: Row(
+                                children: <Widget>[
+                                  Image.asset('assets/icons/reservation.png',
+                                 
+                                  ),
+                                  Padding(padding: EdgeInsets.only(left: 16),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                   children: <Widget>[
+                                    Text('Hotels'.tr,style: mservicetitel,),
+                                    Text('Around the city'.tr,style: mservicesubtitel,)
+                                   ],
+                                  ),
+                                  )
+                                  
+                                ],
+                                                     ),
+                                                ),
+                             ),
+                           ),
+                            
+                         ]
+                   ),
                    
                   
-                         Expanded(
-                           child: Container(
-                                                 margin: EdgeInsets.only(right: 8),
-                                                 padding: EdgeInsets.only(left: 16),
-                                                 height: 64,
-                                                 decoration: BoxDecoration(
-                          //  color: Color(0xFFFFFFFF),
-                            borderRadius: BorderRadius.circular(12),
-                            border: Border.all(color: Color(0xFFE8E8F3),width: 1),
-                                               
-                                                 ),
-                                                 child: Row(
-                            children: <Widget>[
-                              Image.asset('assets/icons/hotel.png',
-                            
-                              
-                              ),
-                              Padding(padding: EdgeInsets.only(left: 16),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                               children: <Widget>[
-                                Text('Hotel'.tr,style: mservicetitel,),
-                                Text('Lets comfortob'.tr,style: mservicesubtitel,)
-                               ],
-                              ),
-                              )
-                              
-                            ],
-                                                 ),
-                                            ),
-                         ),
-                         Expanded(
-                           child: Container(
-                                                 margin: EdgeInsets.only(right: 8),
-                                                 padding: EdgeInsets.only(left: 16),
-                                                 height: 64,
-                                                 decoration: BoxDecoration(
-                           // color: Color(0xFFFFFFFF),
-                            borderRadius: BorderRadius.circular(12),
-                            border: Border.all(color: Color(0xFFE8E8F3),width: 1),
-                                               
-                                                 ),
-                                                 child: Row(
-                            children: <Widget>[
-                              Image.asset('assets/icons/recirculated.png',
-                             
-                              ),
-                              Padding(padding: EdgeInsets.only(left: 16),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                               children: <Widget>[
-                                Text('Car Rental'.tr,style: mservicetitel,),
-                                Text('Around the city'.tr,style: mservicesubtitel,)
-                               ],
-                              ),
-                              )
-                              
-                            ],
-                                                 ),
-                                            ),
-                         ),
-                      
-                      
-                  ],
-                )
-              ],
-            ),
-          ),
-          SizedBox(height: 18),
-       //populair destination section
- Padding(padding: EdgeInsets.only(left: 16,right:24,bottom: 12),
-          child: Text('Populair Destination!'.tr,style: mtravelingtitle,),
-          ),
-          Container(
-            height: 140,
-            child: ListView.builder(
-              itemCount: recommendedplaces.length,
-              padding: EdgeInsets.only(left: 16,right: 16),
-              scrollDirection:Axis.horizontal,
-              itemBuilder: (context,index){
-                return Card(
-                  elevation: 0,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12)
-                  ),
-                  child: Container(
-                  // height: 350,
-                    width: 140,
-                    margin: EdgeInsets.all(10),
-                    padding: EdgeInsets.symmetric(vertical: 4),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(12),
-                      border: Border.all(color: Color(0xFFE8E8F3),width: 1),
-                      boxShadow: [BoxShadow(
-                        color: Colors.white,
-                        blurRadius: 4,
-                        spreadRadius: 2
-                      )]
-                    ),
+                   SizedBox(height: 16,),
+                                     Row(
+                    children: <Widget>[
+                     
                     
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      // crossAxisAlignment: CrossAxisAlignment.center,
-                      children: <Widget>[
-                        
-                         
-                            CircleAvatar(
-                              radius: 35,
+                           GestureDetector(
+                              onTap: (){
+                               Navigator.push(context,
+                   MaterialPageRoute(builder: (context)=> 
+                 Home()
+                                      ));
+                            },
+                             child: Expanded(
+                               child: Container(
+                                                     margin: EdgeInsets.only(right: 8),
+                                                     padding: EdgeInsets.only(left: 16),
+                                                     height: 64,
+                                                     decoration: BoxDecoration(
+                              //  color: Color(0xFFFFFFFF),
+                                borderRadius: BorderRadius.circular(12),
+                                border: Border.all(color: Color(0xFFE8E8F3),width: 1),
+                                                   
+                                                     ),
+                                                     child: Row(
+                                children: <Widget>[
+                                  Image.asset('assets/icons/transport.png',
+                                
+                                  
+                                  ),
+                                  Padding(padding: EdgeInsets.only(left: 16),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                   children: <Widget>[
+                                    Text('Transport Local'.tr,style: mservicetitel,),
+                                    Text('Lets comfortob'.tr,style: mservicesubtitel,)
+                                   ],
+                                  ),
+                                  )
+                                  
+                                ],
+                                                     ),
+                                                ),
+                             ),
+                           ),
+                           GestureDetector(
+                            onTap: (){
                               
-                              backgroundImage:AssetImage(recommendedplaces[index].image,) ,
-                            ),
-                            Text(recommendedplaces[index].location,style: mPopulairdestination,),
-                           Text(recommendedplaces[index].type,style: mservicesubtitel,),
-                          
+                        Navigator.push(context,
+                             MaterialPageRoute(builder: (context)=>
+                        //     MotelApp()
+                        // TabHome()
+                         MapSample()
+                                      ));
+                          },
+                             child: Expanded(
+                               child: Container(
+                                                     margin: EdgeInsets.only(right: 8),
+                                                     padding: EdgeInsets.only(left: 16),
+                                                     height: 64,
+                                                     decoration: BoxDecoration(
+                               // color: Color(0xFFFFFFFF),
+                                borderRadius: BorderRadius.circular(12),
+                                border: Border.all(color: Color(0xFFE8E8F3),width: 1),
+                                                   
+                                                     ),
+                                                     child: Row(
+                                children: <Widget>[
+                                  Image.asset('assets/icons/others.png',
+                                 
+                                  ),
+                                  Padding(padding: EdgeInsets.only(left: 16),
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                   children: <Widget>[
+                                    Text('Guide de voyage'.tr,style: mservicetitel,),
+                                    Text('Around the city'.tr,style: mservicesubtitel,)
+                                   ],
+                                  ),
+                                  )
+                                  
+                                ],
+                                                     ),
+                                                ),
+                             ),
+                           ),
                         
-                        // Image.asset(recommendedplaces[index].image),
-                        // Text(recommendedplaces[index].location,style: mPopulairdestination,),
-                        //  Text(recommendedplaces[index].type,style: mservicesubtitel,),
-                      ],
-                    ),
-                  ),
-                );
-              },
+                        
+                    ],
+                  )
+                ],
+              ),
             ),
-          ),
-          Padding(padding: EdgeInsets.only(left: 16,right:24,bottom: 12),
-          child: Text('Travlog!'.tr,style: mtravelingtitle,),
-          ),
-        //  SizedBox(height: 10,),
-          // Container(child: ImageCards()),
-        ],
+
+
+            SizedBox(height: 25),
+         //populair destination section
+     Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+       children: [
+         Padding(padding: EdgeInsets.only(left: 16,right:24,bottom: 12),
+                child: Text('Populair Destination!'.tr,style: mtravelingtitle,),
+                ),
+       ],
+     ),
+            Container(
+              height: 140,
+              child: ListView.builder(
+                itemCount: recommendedplaces.length,
+                padding: EdgeInsets.only(left: 16,right: 16),
+                scrollDirection:Axis.horizontal,
+                itemBuilder: (context,index){
+                  return Card(
+                    elevation: 0,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12)
+                    ),
+                    child: Container(
+                    // height: 350,
+                      width: 140,
+                      margin: EdgeInsets.all(10),
+                      padding: EdgeInsets.symmetric(vertical: 4),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        border: Border.all(color: Color(0xFFE8E8F3),width: 1),
+                        boxShadow: [BoxShadow(
+                          color: Colors.white,
+                          blurRadius: 4,
+                          spreadRadius: 2
+                        )]
+                      ),
+                      
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        // crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          
+                           
+                              CircleAvatar(
+                                radius: 35,
+                                
+                                backgroundImage:AssetImage(recommendedplaces[index].image,) ,
+                              ),
+                              Text(recommendedplaces[index].location,style: mPopulairdestination,),
+                             Text(recommendedplaces[index].type,style: mservicesubtitel,),
+                            
+                          
+                          // Image.asset(recommendedplaces[index].image),
+                          // Text(recommendedplaces[index].location,style: mPopulairdestination,),
+                          //  Text(recommendedplaces[index].type,style: mservicesubtitel,),
+                        ],
+                      ),
+                    ),
+                  );
+                },
+              ),
+            ),
+            // Padding(padding: EdgeInsets.only(left: 16,right:24,bottom: 12),
+            // child: Text('Travlog!'.tr,style: mtravelingtitle,),
+            // ),
+            ],
+          )
+           // SizedBox(height: 12),
+           
+    
+          //  SizedBox(height: 12),
+           
+          
+         //service section
+        
+          //  SizedBox(height: 10,),
+            // Container(child: ImageCards()),
+          
+        ),
       ),
+      ]
     ),
+    
     );
   }
 }
+//  Container(
+//               height: 144,
+//               margin: EdgeInsets.only(left: 16,right: 16),
+//               child: Column(
+//                 children: <Widget>[
+//                   Row(
+//                     children: <Widget>[
+                     
+                    
+//                           GestureDetector(
+//                             onTap: (){
+//                                Navigator.push(context,
+//                    MaterialPageRoute(builder: (context)=> 
+//                   // HomeScreens()
+//                 //  FirebaseSearchScreen()
+//                // SplashScreen()
+//               // HomeView()
+//                      HomeExploreScreen(
+//               animationController: _animationController,
+//                 )
+//                                       ));
+//                             },
+                            
+//                              child: Expanded(
+//                                child: Container(
+//                                                      margin: EdgeInsets.only(right: 8),
+//                                                      padding: EdgeInsets.only(left: 16),
+//                                                      height: 64,
+//                                                      decoration: BoxDecoration(
+//                                // color: Color(0xFFFFFFFF),
+//                                 borderRadius: BorderRadius.circular(12),
+//                                 border: Border.all(color: Color(0xFFE8E8F3),width: 1),
+                                                   
+//                                                      ),
+//                                                      child: Row(
+//                                 children: <Widget>[
+                                  
+//                                        Image.asset('assets/icons/bus1.png',
+                                      
+                                    
+                                                                
+//                                       fit: BoxFit.cover,
+//                                       ),
+                                    
+                                  
+//                                  // Image.asset('assets/icons/flight.png',
+//                                   // width: 64,
+//                                   // height: 64,
+                                  
+//                                  // ),
+//                                   Padding(padding: EdgeInsets.only(left: 16),
+//                                   child: Column(
+//                                     mainAxisAlignment: MainAxisAlignment.center,
+//                                     crossAxisAlignment: CrossAxisAlignment.start,
+//                                    children: <Widget>[
+//                                     Text('Flight'.tr,style: mservicetitel,),
+//                                     Text('Feel freedom'.tr,style: mservicesubtitel,)
+//                                    ],
+//                                   ),
+//                                   )
+                                  
+//                                 ],
+//                                                      ),
+//                                                 ),
+//                              ),
+//                            ),
+//                            GestureDetector(
+//                             onTap: (){
+                              
+//                         Navigator.push(context,
+//                             MaterialPageRoute(builder: (context)=>
+//                         //     MotelApp()
+//                         TabHome()
+//                                       ));
+//                             },
+//                              child: Expanded(
+//                                child: Container(
+//                                                      margin: EdgeInsets.only(right: 8),
+//                                                      padding: EdgeInsets.only(left: 16),
+//                                                      height: 64,
+//                                                      decoration: BoxDecoration(
+//                                // color: Color(0xFFFFFFFF),
+//                                 borderRadius: BorderRadius.circular(12),
+//                                 border: Border.all(color: Color(0xFFE8E8F3),width: 1),
+                                                   
+//                                                      ),
+//                                                      child: Row(
+//                                 children: <Widget>[
+                                  
+//                                        Image.asset('assets/icons/plane1.png',
+                                       
+                                                               
+                                      
+//                                       ),
+                                    
+                                  
+//                                   Padding(padding: EdgeInsets.only(left: 16),
+//                                   child: Column(
+//                                     mainAxisAlignment: MainAxisAlignment.center,
+//                                     crossAxisAlignment: CrossAxisAlignment.start,
+//                                    children: <Widget>[
+//                                     Text('Trains'.tr,style: mservicetitel,),
+//                                     Text('Security'.tr,style: mservicesubtitel,)
+//                                    ],
+//                                   ),
+//                                   )
+                                  
+//                                 ],
+//                                                      ),
+//                                                 ),
+//                              ),
+//                            ),
+                        
+                        
+//                     ],
+//                   ),
+//                   SizedBox(height: 16,),
+//                    Row(
+//                     children: <Widget>[
+                     
+                    
+//                            Expanded(
+//                              child: Container(
+//                                                    margin: EdgeInsets.only(right: 8),
+//                                                    padding: EdgeInsets.only(left: 16),
+//                                                    height: 64,
+//                                                    decoration: BoxDecoration(
+//                             //  color: Color(0xFFFFFFFF),
+//                               borderRadius: BorderRadius.circular(12),
+//                               border: Border.all(color: Color(0xFFE8E8F3),width: 1),
+                                                 
+//                                                    ),
+//                                                    child: Row(
+//                               children: <Widget>[
+//                                 Image.asset('assets/icons/hotel.png',
+                              
+                                
+//                                 ),
+//                                 Padding(padding: EdgeInsets.only(left: 16),
+//                                 child: Column(
+//                                   mainAxisAlignment: MainAxisAlignment.center,
+//                                   crossAxisAlignment: CrossAxisAlignment.start,
+//                                  children: <Widget>[
+//                                   Text('Hotel'.tr,style: mservicetitel,),
+//                                   Text('Lets comfortob'.tr,style: mservicesubtitel,)
+//                                  ],
+//                                 ),
+//                                 )
+                                
+//                               ],
+//                                                    ),
+//                                               ),
+//                            ),
+//                            Expanded(
+//                              child: Container(
+//                                                    margin: EdgeInsets.only(right: 8),
+//                                                    padding: EdgeInsets.only(left: 16),
+//                                                    height: 64,
+//                                                    decoration: BoxDecoration(
+//                              // color: Color(0xFFFFFFFF),
+//                               borderRadius: BorderRadius.circular(12),
+//                               border: Border.all(color: Color(0xFFE8E8F3),width: 1),
+                                                 
+//                                                    ),
+//                                                    child: Row(
+//                               children: <Widget>[
+//                                 Image.asset('assets/icons/recirculated.png',
+                               
+//                                 ),
+//                                 Padding(padding: EdgeInsets.only(left: 16),
+//                                 child: Column(
+//                                   mainAxisAlignment: MainAxisAlignment.center,
+//                                   crossAxisAlignment: CrossAxisAlignment.start,
+//                                  children: <Widget>[
+//                                   Text('Car Rental'.tr,style: mservicetitel,),
+//                                   Text('Around the city'.tr,style: mservicesubtitel,)
+//                                  ],
+//                                 ),
+//                                 )
+                                
+//                               ],
+//                                                    ),
+//                                               ),
+//                            ),
+                        
+                        
+//                     ],
+//                   )
+//                 ],
+//               ),
+//             ),
+
+
+  // Container(
+  //             alignment: Alignment.centerLeft,
+  //             margin: EdgeInsets.only(left: 16,right: 16),
+  //             width: MediaQuery.of(context).size.width,
+  //             child: Column(
+  //               crossAxisAlignment: CrossAxisAlignment.start,
+  //               mainAxisAlignment: MainAxisAlignment.start,
+  //               children: <Widget>[
+  //                 Container(
+  //                   width: MediaQuery.of(context).size.width,
+  //                    padding: EdgeInsets.all(16.0),
+  //                   decoration: BoxDecoration(
+  //                     borderRadius: BorderRadius.circular(10)
+  //                   ),
+  //                   height: 190,
+  //                   child: Image.asset('assets/slider_3.png'),
+  //                 )
+                           
+                        
+  //               ,
+  //                 SizedBox(height: 18,),
+                
+  //               ],
+  //             ),
+  //           )

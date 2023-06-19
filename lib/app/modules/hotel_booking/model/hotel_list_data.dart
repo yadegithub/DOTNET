@@ -43,8 +43,8 @@ class HotelListData {
   static List<HotelListData> hotelList = [
     HotelListData(
       imagePath: Localfiles.hotel_1,
-      titleTxt: 'Grand Royal Hotel',
-      subTxt: 'Wembley, London',
+      titleTxt:'Hotel Halima',
+      subTxt: 'Nouakchott',
       dist: 2.0,
       reviews: 80,
       rating: 4.4,
@@ -56,8 +56,8 @@ class HotelListData {
     ),
     HotelListData(
       imagePath: Localfiles.hotel_2,
-      titleTxt: 'Queen Hotel',
-      subTxt: 'Wembley, London',
+      titleTxt:'فندق انواكشوط',
+      subTxt: 'Nouakchott',
       dist: 4.0,
       reviews: 74,
       rating: 4.5,
@@ -69,8 +69,8 @@ class HotelListData {
     ),
     HotelListData(
       imagePath: Localfiles.hotel_3,
-      titleTxt: 'Grand Royal Hotel',
-      subTxt: 'Wembley, London',
+      titleTxt: 'فندق فلورا',
+      subTxt: 'Nouakchott',
       dist: 3.0,
       reviews: 62,
       rating: 4.0,
@@ -82,8 +82,8 @@ class HotelListData {
     ),
     HotelListData(
       imagePath: Localfiles.hotel_4,
-      titleTxt: 'Queen Hotel',
-      subTxt: 'Wembley, London',
+      titleTxt: 'Hôtel El aziza فندق العزيزة',
+      subTxt: 'Nouakchott',
       dist: 7.0,
       reviews: 90,
       rating: 4.4,
@@ -95,8 +95,8 @@ class HotelListData {
     ),
     HotelListData(
       imagePath: Localfiles.hotel_5,
-      titleTxt: 'Grand Royal Hotel',
-      subTxt: 'Wembley, London',
+      titleTxt:'فندق فلورا',
+      subTxt: 'Nouakchott',
       dist: 2.0,
       reviews: 240,
       rating: 4.5,

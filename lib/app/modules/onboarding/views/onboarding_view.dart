@@ -23,7 +23,7 @@ class OnboardingView extends GetView<OnboardingController> {
           padding: EdgeInsets.fromLTRB(24.w, 0, 24.w, 80.w),
           decoration: BoxDecoration(
             image: DecorationImage(
-              image: AssetImage(AppAsset.image('img_background.png')),
+              image: AssetImage(AppAsset.image('get_started.png')),
               fit: BoxFit.cover,
             ),
           ),

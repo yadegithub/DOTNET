@@ -292,7 +292,8 @@ class _HomeExploreScreenState extends State<HomeExploreScreen>
           onTap: () {
            // NavigationServices(context).gotoSearchScreen();
           },
-          child: CommonSearchBar(
+          child:
+           CommonSearchBar(
             iconData: FontAwesomeIcons.search,
             enabled: false,
             text: "where_are_you_going".tr,

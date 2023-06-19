@@ -20,8 +20,8 @@ class AppAsset {
       return 'assets/logos/logo_citilink.png';
     } else if (airlineCode.contains('GA')) {
       return 'assets/logos/logo_garuda_indonesia.png';
-    } else if (airlineCode.contains('JT')) {
-      return 'assets/logos/logo_lion_air.png';
+    } else if (airlineCode.contains('MR')) {
+      return 'assets/logos/mauritanei.png';
     } else if (airlineCode.contains('SJ')) {
       return 'assets/logos/logo_sriwijaya_air.png';
     } else if (airlineCode.contains('IU')) {

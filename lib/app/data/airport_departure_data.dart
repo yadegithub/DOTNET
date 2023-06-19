@@ -1,103 +1,114 @@
 const List<Map<String, dynamic>> airportDepartureData = [
   {
     'code': 'cgk',
-    'name': 'Soekarno Hatta',
-    'location': 'Jakarta',
+    'name': 'Nouakchott International Airport',
+    'location': 'Nouakchott',
   },
   {
     'code': 'sub',
-    'name': 'Juanda',
-    'location': 'Surabaya',
+    'name': 'Nouadhibou International Airport',
+    'location': 'Nouadibou',
   },
   {
     'code': 'soc',
-    'name': 'Adi Sumarmo',
-    'location': 'Solo',
+        'name': 'Nouakchott International Airport',
+    'location': 'Nouakchott',
   },
   {
     'code': 'jog',
-    'name': 'Adi Sucipto',
-    'location': 'Yogyakarta',
+        'name': 'Nouadhibou International Airport',
+
+    'location': 'Nouadibou',
   },
   {
     'code': 'bdo',
-    'name': 'Husein Sastranegara',
-    'location': 'Bandung',
+            'name': 'Nouakchott International Airport',
+
+    'location': 'Nouakchott',
   },
   {
     'code': 'btj',
-    'name': 'Sultan Iskandar Muda',
-    'location': 'Banda Aceh',
+            'name': 'Nouadhibou International Airport',
+
+    'location': 'Nouadibou',
   },
   {
     'code': 'kno',
-    'name': 'Internasional Kuala Namu',
-    'location': 'Medan',
+                'name': 'Nouakchott International Airport',
+
+    'location': 'Nouakchott',
   },
   {
     'code': 'bth',
-    'name': 'Hang Nadim',
-    'location': 'Batam',
+    'name': 'Nouakchott International Airport',
+    'location': 'Nouakchott',
   },
   {
     'code': 'tnj',
-    'name': 'Raja Haji Fisabilillah',
-    'location': 'Tanjung Pinang',
+                'name': 'Nouadhibou International Airport',
+
+    'location': 'Nouadibou',
   },
   {
     'code': 'pku',
-    'name': 'Sultan Syarif Kasim II',
-    'location': 'Pekanbaru',
+    'name': 'Nouakchott International Airport',
+    'location': 'Nouakchott',
   },
   {
     'code': 'pdg',
-    'name': 'Minangkabau',
-    'location': 'Padang',
+                'name': 'Nouadhibou International Airport',
+
+    'location': 'Nouadibou',
   },
   {
     'code': 'plm',
-    'name': 'Sultan Mahmud Badaruddin II',
-    'location': 'Palembang',
+                'name': 'Nouadhibou International Airport',
+
+    'location': 'Nouadibou',
   },
   {
     'code': 'bks',
-    'name': 'Fatmawati Soekarno',
-    'location': 'Bengkulu',
+    'name': 'Nouakchott International Airport',
+    'location': 'Nouakchott',
   },
   {
     'code': 'tkg',
-    'name': 'Radin Inten II',
-    'location': 'Bandar Lampung',
+                'name': 'Nouadhibou International Airport',
+
+    'location': 'Nouadibou',
   },
   {
     'code': 'dps',
-    'name': 'Ngurah Rai',
-    'location': 'Denpasar',
+    'name': 'Nouakchott International Airport',
+    'location': 'Nouakchott',
   },
   {
     'code': 'lop',
-    'name': 'Zainuddin Abdul Madjid',
-    'location': 'Lombok',
+                'name': 'Nouadhibou International Airport',
+
+    'location': 'Nouadibou',
   },
   {
     'code': 'koe',
-    'name': 'El Tari',
-    'location': 'Kupang',
+    'name': 'Nouakchott International Airport',
+    'location': 'Nouakchott',
   },
   {
     'code': 'bpn',
-    'name': 'Sepinggan',
-    'location': 'Balikpapan',
+                'name': 'Nouadhibou International Airport',
+
+    'location': 'Nouadibou',
   },
   {
     'code': 'pnk',
     'name': 'Supadio',
-    'location': 'Pontianak',
+    'location': 'Nouakchott',
   },
   {
     'code': 'trk',
-    'name': 'Juwata',
-    'location': 'Tarakan',
+                'name': 'Nouadhibou International Airport',
+
+    'location': 'Nouadibou',
   },
   {
     'code': 'upg',
@@ -107,7 +118,7 @@ const List<Map<String, dynamic>> airportDepartureData = [
   {
     'code': 'mdc',
     'name': 'Sam Ratulangi',
-    'location': 'Manado',
+    'location': 'Nouadibou',
   },
   {
     'code': 'amq',
@@ -116,7 +127,8 @@ const List<Map<String, dynamic>> airportDepartureData = [
   },
   {
     'code': 'djj',
-    'name': 'Sentani',
-    'location': 'Papua',
+                'name': 'Nouadhibou International Airport',
+
+    'location': 'Nouadibou',
   }
 ];

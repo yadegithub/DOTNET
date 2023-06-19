@@ -9,10 +9,29 @@ import 'package:flextrip/widgets/pages/page_default.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:awesome_notifications/awesome_notifications.dart';
 
 class TopupView extends GetView<TopupController> {
   const TopupView({super.key});
-
+@override
+void initState(){
+  AwesomeNotifications().isNotificationAllowed().then((isAllowed) {
+   if(!isAllowed){
+            AwesomeNotifications().requestPermissionToSendNotifications();
+   }
+  });
+//super.initState();
+}
+triggerNotification(){
+  AwesomeNotifications().createNotification(
+    content: NotificationContent(
+      id: 10,
+      channelKey: 'com.example.flextrip',
+      title: 'Simple Notification',
+      body: 'test'
+    )
+    );
+}
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -84,6 +103,7 @@ class TopupView extends GetView<TopupController> {
                   onTap: controller.submit,
                   enabled: controller.isValidNominal.value,
                   isLoading: controller.isLoading.value,
+                 onpressed: triggerNotification()
                 )
               ],
             ),

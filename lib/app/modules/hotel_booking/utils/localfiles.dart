@@ -16,8 +16,8 @@ class Localfiles {
   static const String explore_1 = BaseImageUrl + 'explore_1.jpg';
   static const String explore_2 = BaseImageUrl + 'explore_2.jpg';
   static const String explore_3 = BaseImageUrl + 'explore_3.jpg';
-  static const String hotel_1 = BaseImageUrl + 'hotel_1.jpg';
-  static const String hotel_2 = BaseImageUrl + 'hotel_2.png';
+  static const String hotel_1 = BaseImageUrl + 'hotelhalima.jpg';
+  static const String hotel_2 = BaseImageUrl + 'nktt.jpg';
   static const String hotel_3 = BaseImageUrl + 'hotel_3.png';
   static const String hotel_4 = BaseImageUrl + 'hotel_4.png';
   static const String hotel_5 = BaseImageUrl + 'hotel_5.png';

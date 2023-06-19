@@ -8,7 +8,7 @@ import 'package:flextrip/language/appLocalizations.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-
+import 'package:awesome_notifications/awesome_notifications.dart';
 class RoomeBookView extends StatefulWidget {
   final HotelListData roomData;
   
@@ -29,7 +29,16 @@ class RoomeBookView extends StatefulWidget {
 
 class _RoomeBookViewState extends State<RoomeBookView> {
   var pageController = PageController(initialPage: 0);
-
+triggerNotification(){
+  AwesomeNotifications().createNotification(
+    content: NotificationContent(
+      id: 10,
+      channelKey: 'com.example.flextrip',
+      title: 'Simple Notification',
+      body: 'test'
+    )
+    );
+}
   @override
   Widget build(BuildContext context) {
     List<String> images = widget.roomData.imagePath.split(" ");
@@ -108,10 +117,13 @@ class _RoomeBookViewState extends State<RoomeBookView> {
                                   style: TextStyles(context).getRegularStyle(),
                                 ),
                               ),
+                              
                                onTap: () {
+                                
                                 Navigator.push(context,
                  MaterialPageRoute(builder: (context)=>  Booking_Details()
                                    ));
+                                //    triggerNotification();
                               }
                             ),
                           ),

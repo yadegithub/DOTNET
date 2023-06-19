@@ -2,10 +2,10 @@ List<Map<String, dynamic>> recommendedDestination = [
   {
     'about': 'aboutLombok',
     'airport_destination_code': 'lop',
-    'airport_destination_location': 'Lombok',
-    'airport_destination_name': 'Zainuddin Abdul Madjid',
-    'country': 'Indonesia',
-    'destination_name': 'Lombok',
+    'airport_destination_location': 'Nouadibou',
+    'airport_destination_name': 'Nouadhibou International Airport',
+    'country': 'Mauritania',
+    'destination_name': 'Nouadibou',
     'image': 'img_destination_lombok.jpeg',
     'interests': [
       'attractionLombok1',
@@ -23,10 +23,10 @@ List<Map<String, dynamic>> recommendedDestination = [
   {
     'about': 'aboutBandung',
     'airport_destination_code': 'bdo',
-    'airport_destination_location': 'Bandung',
-    'airport_destination_name': 'Husein Sastranegara',
-    'country': 'Indonesia',
-    'destination_name': 'Bandung',
+    'airport_destination_location': 'Nouakchott',
+    'airport_destination_name': 'Nouakchott International Airport',
+    'country': 'Mauritania',
+    'destination_name': 'Nouakchott',
     'image': 'img_destination_bandung.jpeg',
     'interests': [
       'attractionBandung1',

@@ -138,11 +138,13 @@ class _LoginWitheFacbookState extends State<LoginWitheFacbook> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: Text('Facebook Auth Project')),
-        body: _checking
-            ? Center(
-                child: CircularProgressIndicator(),
-              )
-            : Center(
+        body:
+        //  _checking
+        //     ? Center(
+        //         child: CircularProgressIndicator(),
+        //       )
+        //     :
+             Center(
                 child: Column(mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [

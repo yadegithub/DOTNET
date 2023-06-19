@@ -6,6 +6,9 @@ import 'dart:convert';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_database/firebase_database.dart';
+import 'package:flextrip/app/modules/hotel_booking/hotel_detailes/orderSuccessViews.dart';
+import 'package:flextrip/app/modules/hotel_booking/ticket_page.dart';
+import 'package:flextrip/app/modules/order/views/order_success_view.dart';
 import 'package:flextrip/styles/styles.dart';
 import 'package:flextrip/utils/app_asset.dart';
 import 'package:flextrip/utils/format_date_time.dart';
@@ -423,28 +426,32 @@ triggerNotification(){
                           ],
                   
                ),
-              //  ButtonPrimary(
-              //       label: 'procced to payment'.tr,
-              //       //enabled: controller.isValidTicketForm.value,
-              //       onpressed:(){
-              //         triggerNotification;
-              //       },
-              //       onTap: () async{
+               ButtonPrimary(
+                    label: 'procced to payment'.tr,
+                    //enabled: controller.isValidTicketForm.value,
+                  
+                    onTap: () async{
                       
-              //          await makePayment();
+                       await makePayment();
+                      // triggerNotification();
+                //          Navigator.push(context,
+                //    MaterialPageRoute(builder: (context)=> 
+                // //  TicketHomePage()
+              ///   OrderSuccessView()
+                //                       ));
                       
-              //       },
-                    ElevatedButton(
-          child:  Text('procced to payment'.tr),
+                    },
+          //           ElevatedButton(
+          // child:  Text('procced to payment'.tr),R
           
-          onLongPress: () async{
+          // onLongPress: () async{
             
-                     await makePayment();
-          },
-          onPressed: triggerNotification,
-          ),
+          //            await makePayment();
+          // },
+          // onPressed: triggerNotification,
+          // ),
                     
-              //     )
+                  )
             ],
       ),
             
@@ -507,21 +514,28 @@ triggerNotification(){
     try {
       await Stripe.instance.presentPaymentSheet(
           ).then((value){
-        showDialog(
-          context: context,
-          builder: (_) => AlertDialog(
-            content: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Row(
-                  children: const [
-                    Icon(Icons.check_circle, color: Colors.green,),
-                    Text("Payment Successfull"),
-                  ],
-                ),
-              ],
-            ), 
-          ));
+            // OrderSuccessView();
+              Navigator.push(context,
+                   MaterialPageRoute(builder: (context)=> 
+                //  TicketHomePage()
+                  OrderSuccessViews()
+                                      ));
+                      
+        // showDialog(
+        //   context: context,
+        //   builder: (_) => AlertDialog(
+        //     content: Column(
+        //       mainAxisSize: MainAxisSize.min,
+        //       children: [
+        //         Row(
+        //           children: const [
+        //             Icon(Icons.check_circle, color: Colors.green,),
+        //             Text("Payment Successfull"),
+        //           ],
+        //         ),
+        //       ],
+        //     ), 
+        //   ));
         // ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text("paid successfully")));
 
         paymentIntent = null;

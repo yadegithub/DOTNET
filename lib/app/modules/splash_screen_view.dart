@@ -45,7 +45,7 @@ class _SplashScreenViewState extends State<SplashScreenView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColor.primaryColor,
+      backgroundColor: AppColor.myColor,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -57,7 +57,7 @@ class _SplashScreenViewState extends State<SplashScreenView> {
               child: Image.asset(AppAsset.logo('logo_app.png')),
             ),
             Text(
-              'AIRPEDIA',
+              'FLEXITRIP',
               style: TextStyles.title.copyWith(
                 color: Colors.white,
                 letterSpacing: 8.w,

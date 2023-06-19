@@ -23,6 +23,7 @@ class HomeView extends GetView<HomeController> {
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
         floatingActionButton: FloatingActionButton(
           onPressed: () => Get.toNamed(Routes.TOPUP),
+          backgroundColor: Color(0xFF26A69A),
           child: Image.asset(
             AppAsset.icon('ic_topup.png'),
             width: 30.w,
