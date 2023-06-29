@@ -133,7 +133,7 @@ triggerNotification(){
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: <Widget>[
                           Text(
-                            "\$${widget.roomData.perNight}",
+                            "${widget.roomData.perNight}",
                             textAlign: TextAlign.left,
                             style: TextStyles(context)
                                 .getBoldStyle()

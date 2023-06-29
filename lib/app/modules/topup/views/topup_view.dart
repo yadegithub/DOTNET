@@ -103,7 +103,7 @@ triggerNotification(){
                   onTap: controller.submit,
                   enabled: controller.isValidNominal.value,
                   isLoading: controller.isLoading.value,
-                 onpressed: triggerNotification()
+                // onpressed: triggerNotification()
                 )
               ],
             ),

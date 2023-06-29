@@ -33,7 +33,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    final  newTrip= new Trip('',   DateTime.now(), 12,  '');
+    final  newTrip= new Trip('',   DateTime.now(), 12, );
     return Scaffold(
      // const HomeHeader(),
       appBar: AppBar(

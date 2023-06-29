@@ -138,6 +138,7 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: Text('Maps'),
           centerTitle: true,
+          backgroundColor: Color(0xFF26A69A),
         ),
         body: Stack(
           children: <Widget>[

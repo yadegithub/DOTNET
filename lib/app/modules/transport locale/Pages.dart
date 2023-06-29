@@ -1,5 +1,9 @@
+import 'package:flextrip/app/modules/Dashborder/veiw/Dashborder.dart';
 import 'package:flextrip/app/modules/test/core/theme/app_color.dart';
+import 'package:flextrip/app/modules/transport%20locale/Tickte.dart';
+import 'package:flextrip/app/modules/transport%20locale/views/home_view.dart';
 import 'package:flextrip/styles/styles.dart';
+import 'package:flextrip/widgets/buttons/button_primary.dart';
 import 'package:flextrip/widgets/inputs/input_date.dart';
 import 'package:flextrip/widgets/inputs/input_primary.dart';
 import 'package:flutter/material.dart';
@@ -166,18 +170,43 @@ String  selectedtemp="0";
           ),
         ),
               
-             ElevatedButton(
-                child: Text("Continue"),
-                onPressed: () {
+             
+             Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                
+              ButtonPrimary(
+                label: "Continue".tr,
+                onTap: () {
                 //  trip.title = _titleController.text;
                  Navigator.push(context, MaterialPageRoute(
-               builder: (context)=>TicketHomePage()
+               builder: (context)=>Ticket()
+                
+                     )    
+                  );
+                },
+              ),
+              ],
+             ),
+             SizedBox(height: 5,),
+             Row(
+              children: [
+                  ButtonPrimary(
+                
+                label: "Annuller".tr,
+                onTap: () {
+                //  trip.title = _titleController.text;
+                 Navigator.push(context, MaterialPageRoute(
+               builder: (context)=>Dashborder()
                 //  Navigator.push(
                       //context,
                      )    // MaterialPageRoute(builder: (context) => NewTripDateView(trip: trip)),
                   );
                 },
               ),
+              ],
+             )
         ],)),
       
         

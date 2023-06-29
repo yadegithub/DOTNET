@@ -35,7 +35,7 @@ final List<Coffee> coffeeShops = [
       ),
   Coffee(
       shopName: 'فندق انواكشوط',
-      address: '4257+3JV, Nouakchott, Mauritania',
+      address: 'Nouakchott, Mauritania',
       description:
           'All-day American comfort eats in a basic diner-style setting',
       locationCoords: LatLng(18.108199206462587, -15.985963062312265),
@@ -56,7 +56,7 @@ final List<Coffee> coffeeShops = [
       ),
   Coffee(
       shopName: 'Hôtel El aziza فندق العزيزة',
-      address: '428C+2FP, Nouakchott, Mauritania',
+      address: 'Nouakchott, Mauritania',
       description:
           'Snazzy, compact Japanese cafe showcasing high-end coffee & sandwiches, plus sake & beer at night.',
       locationCoords: LatLng(18.115553646544125, -15.978787489601995),
@@ -66,7 +66,7 @@ final List<Coffee> coffeeShops = [
       ),
   Coffee(
       shopName: 'فندق حليمةHôtel Halima',
-      address: '32XG+X8X, Nouakchott, Mauritania',
+      address: ' Nouakchott, Mauritania',
       description:
           'Compact coffee & espresso bar turning out drinks made from direct-trade beans in a low-key setting.',
       locationCoords: LatLng(18.099994211636087, -15.974153302976566),

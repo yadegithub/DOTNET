@@ -49,7 +49,7 @@ class HomeHeader extends GetView<HomeController> {
                         )
                       else
                         Text(
-                          'Hi,',
+                          'Hi,'.tr,
                           style: TextStyles.title.copyWith(color: Colors.white),
                         ),
                       if (controller.isLoadingDataUser.value)

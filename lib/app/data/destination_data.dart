@@ -6,7 +6,7 @@ List<Map<String, dynamic>> recommendedDestination = [
     'airport_destination_name': 'Nouadhibou International Airport',
     'country': 'Mauritania',
     'destination_name': 'Nouadibou',
-    'image': 'img_destination_lombok.jpeg',
+    'image': 'imgdestination1.jpg',
     'interests': [
       'attractionLombok1',
       'attractionLombok2',
@@ -14,9 +14,9 @@ List<Map<String, dynamic>> recommendedDestination = [
       'attractionLombok4'
     ],
     'photos': [
-      'img_destination_lombok1.jpeg',
-      'img_destination_lombok2.jpeg',
-      'img_destination_lombok3.jpeg',
+      'imgdestination2.jpg',
+      'imgdestination3.jpg',
+      'imgdestination4.jpg',
     ],
     'rating': 5.0,
   },
@@ -27,7 +27,7 @@ List<Map<String, dynamic>> recommendedDestination = [
     'airport_destination_name': 'Nouakchott International Airport',
     'country': 'Mauritania',
     'destination_name': 'Nouakchott',
-    'image': 'img_destination_bandung.jpeg',
+    'image': 'imgdestination5.jpg',
     'interests': [
       'attractionBandung1',
       'attractionBandung2',
@@ -35,9 +35,9 @@ List<Map<String, dynamic>> recommendedDestination = [
       'attractionBandung4'
     ],
     'photos': [
-      'img_destination_bandung1.jpeg',
-      'img_destination_bandung2.jpeg',
-      'img_destination_bandung3.jpeg',
+      'imgdestination2.jpg',
+      'imgdestination3.jpg',
+      'imgdestination4.jpg',
     ],
     'rating': 4.8,
   },
@@ -47,8 +47,8 @@ List<Map<String, dynamic>> recommendedDestination = [
     'airport_destination_location': 'Yogyakarta',
     'airport_destination_name': 'Adi Sucipto',
     'country': 'Indonesia',
-    'destination_name': 'Yogyakarta',
-    'image': 'img_destination_yogyakarta.jpeg',
+    'destination_name': 'Adrar',
+    'image': 'imgdestination6.jpg',
     'interests': [
       'attractionYogyakarta1',
       'attractionYogyakarta2',
@@ -56,13 +56,13 @@ List<Map<String, dynamic>> recommendedDestination = [
       'attractionYogyakarta4'
     ],
     'photos': [
-      'img_destination_yogyakarta1.jpeg',
-      'img_destination_yogyakarta2.jpeg',
-      'img_destination_yogyakarta3.jpeg',
+      'imgdestination2.jpg',
+      'imgdestination3.jpg',
+      'imgdestination4.jpg',
     ],
     'rating': 4.7,
   },
-  {
+  { 
     'about': 'aboutSurabaya',
     'airport_destination_code': 'sub',
     'airport_destination_location': 'Surabaya',

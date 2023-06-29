@@ -35,13 +35,13 @@ class OnboardingView extends GetView<OnboardingController> {
                   Text(
                     'greetingTitle'.tr,
                     textAlign: TextAlign.center,
-                    style: TextStyles.title.copyWith(color: Colors.white),
+                    style: TextStyles.title.copyWith(color: Colors.black,fontSize: 25),
                   ),
                   verticalSpace(10.w),
                   Text(
                     'greetingDesc'.tr,
                     textAlign: TextAlign.center,
-                    style: TextStyles.text.copyWith(color: AppColor.greyColor1),
+                    style: TextStyles.text.copyWith(color: Colors.grey.shade600,fontSize: 20),
                   ),
                   verticalSpace(50.w),
                   ButtonPrimary(
@@ -60,7 +60,7 @@ class OnboardingView extends GetView<OnboardingController> {
                     Text(
                       'chooseLanguage'.tr,
                       style:
-                          TextStyles.text.copyWith(color: AppColor.greyColor2),
+                          TextStyles.text.copyWith(color: Colors.black,fontSize: 20),
                     ),
                     verticalSpace(Insets.xs),
                     SizedBox(

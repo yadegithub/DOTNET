@@ -111,27 +111,27 @@ class HotelListData {
   static List<HotelListData> popularList = [
     HotelListData(
       imagePath: Localfiles.popular_1,
-      titleTxt: 'Paris',
+      titleTxt: 'Adrar',
     ),
     HotelListData(
       imagePath: Localfiles.popular_2,
-      titleTxt: 'Spain',
+      titleTxt: 'Akjoujet',
     ),
     HotelListData(
       imagePath: Localfiles.popular_3,
-      titleTxt: 'Vernazza',
+      titleTxt: 'Ndb',
     ),
     HotelListData(
       imagePath: Localfiles.popular_4,
-      titleTxt: 'London',
+      titleTxt: 'Adrar',
     ),
     HotelListData(
       imagePath: Localfiles.popular_5,
-      titleTxt: 'Venice',
+      titleTxt: 'Nktt',
     ),
     HotelListData(
       imagePath: Localfiles.popular_6,
-      titleTxt: 'Diamond Head',
+      titleTxt: 'Zourate',
     ),
   ];
 
@@ -282,42 +282,42 @@ class HotelListData {
   static List<HotelListData> lastsSearchesList = [
     HotelListData(
       imagePath: Localfiles.popular_4,
-      titleTxt: 'London',
+      titleTxt: 'Adrar',
       roomData: RoomData(1, 3),
       date: DateText(12, 22),
       dateTxt: '12 - 22 Dec',
     ),
     HotelListData(
       imagePath: Localfiles.popular_1,
-      titleTxt: 'Paris',
+      titleTxt: 'Akjoujet',
       roomData: RoomData(1, 3),
       date: DateText(12, 24),
       dateTxt: '12 - 24 Sep',
     ),
     HotelListData(
       imagePath: Localfiles.city_3,
-      titleTxt: 'New York',
+      titleTxt: 'Adrar',
       roomData: RoomData(1, 3),
       date: DateText(20, 22),
       dateTxt: '20 - 22 Sep',
     ),
     HotelListData(
       imagePath: Localfiles.city_4,
-      titleTxt: 'Tokyo',
+      titleTxt: 'Ndb',
       roomData: RoomData(12, 22),
       date: DateText(12, 22),
       dateTxt: '12 - 22 Nov',
     ),
     HotelListData(
       imagePath: Localfiles.city_5,
-      titleTxt: 'Shanghai',
+      titleTxt: 'Adrar',
       roomData: RoomData(10, 15),
       date: DateText(10, 15),
       dateTxt: '10 - 15 Dec',
     ),
     HotelListData(
       imagePath: Localfiles.city_6,
-      titleTxt: 'Moscow',
+      titleTxt: 'Ndb',
       roomData: RoomData(12, 14),
       date: DateText(12, 14),
       dateTxt: '12 - 14 Dec',

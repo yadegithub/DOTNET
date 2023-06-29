@@ -115,7 +115,7 @@ triggerNotification(){
                             children: [
                               //Text(booking['name'])
                               Text(
-                              '',
+                              'Hotel Halima',
                               //  test,
                               //  '${booking['total_payement']}'.toString(),
                             
@@ -437,7 +437,7 @@ triggerNotification(){
                 //          Navigator.push(context,
                 //    MaterialPageRoute(builder: (context)=> 
                 // //  TicketHomePage()
-              ///   OrderSuccessView()
+                // OrderSuccessView()
                 //                       ));
                       
                     },

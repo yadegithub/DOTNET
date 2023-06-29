@@ -31,7 +31,7 @@ class DestinationTicketItem extends StatelessWidget {
         isShowShadows: true,
         shadows: Shadows.shadowsUp,
         isOutlined: true,
-        outlineColor: isSelect ? AppColor.primaryColor : Colors.transparent,
+        outlineColor: isSelect ? AppColor.myColor : Colors.transparent,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -53,6 +53,8 @@ class DestinationTicketItem extends StatelessWidget {
                   child: Image.asset(
                     AppAsset.logoAirline(data.airlineCode),
                     fit: BoxFit.cover,
+                    //width: 90,
+                   // height: 80,
                   ),
                 ),
                 Expanded(

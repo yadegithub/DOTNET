@@ -86,7 +86,7 @@ class _TicketHomePageState extends State<TicketHomePage> {
               ),
               child: const Center(
                 child: Text(
-                  'Business Class',
+                  'Hotel Halima',
                   style: TextStyle(color: Colors.green),
                 ),
               ),
@@ -117,10 +117,10 @@ class _TicketHomePageState extends State<TicketHomePage> {
             )
           ],
         ),
-        const Padding(
+         Padding(
           padding: EdgeInsets.only(top: 20.0),
           child: Text(
-            'Booking Ticket',
+            'Booking Ticket'.tr,
             style: TextStyle(
                 color: Colors.black,
                 fontSize: 20.0,
@@ -133,14 +133,14 @@ class _TicketHomePageState extends State<TicketHomePage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               ticketDetailsWidget(
-                  'User', 'Hafiz M Mujahid', 'Date'.tr, '28-03-2023'),
+                  'User'.tr, 'Hafiz M Mujahid', 'Date'.tr, '28-03-2023'),
               Padding(
                 padding: const EdgeInsets.only(top: 12.0,),
-                child: ticketDetailsWidget('Room'.tr, '768','Chekout_out'.tr, '28-03-2023'),
+                child: ticketDetailsWidget('Room'.tr, '768','Chekout'.tr, '28-03-2023'),
               ),
               Padding(
                 padding: const EdgeInsets.only(top: 12.0, ),
-                child: ticketDetailsWidget('Chekout_in'.tr,'20 day'.tr,'Wing'.tr, '21B'),
+                child: ticketDetailsWidget('Check_in Time'.tr,'20 day'.tr,'Wing'.tr, '21B'),
               ),
             ],
           ),

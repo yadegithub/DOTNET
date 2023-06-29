@@ -25,11 +25,11 @@ class AppAsset {
     } else if (airlineCode.contains('SJ')) {
       return 'assets/logos/logo_sriwijaya_air.png';
     } else if (airlineCode.contains('IU')) {
-      return 'assets/logos/logo_super_air_jet.png';
+      return 'assets/logos/mauritanei.png';
     } else if (airlineCode.contains('IW')) {
-      return 'assets/logos/logo_wings_air.png';
+      return 'assets/logos/mauritanei.png';
     } else {
-      return 'assets/logos/logo_garuda_indonesia.png';
+      return 'assets/logos/mauritanei.png';
     }
   }
 }

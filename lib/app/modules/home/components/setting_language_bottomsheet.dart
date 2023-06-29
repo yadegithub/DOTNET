@@ -25,7 +25,7 @@ class SettingLanguageBottomsheet extends GetView<SettingController> {
             return SettingLanguageItem(
               label: item.language == 'ID'
                   ? 'Arabic (Mouritania)'
-                  : 'English (United States)',
+                  : 'French (France)',
                   
               isSelected: item.language ==
                   controller.cUtility.appLanguage.value.language,

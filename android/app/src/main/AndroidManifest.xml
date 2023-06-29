@@ -24,7 +24,7 @@
     </queries>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
    <application
-        android:label="flextrip"
+        android:label="Flextrip"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

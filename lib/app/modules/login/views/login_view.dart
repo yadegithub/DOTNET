@@ -140,7 +140,7 @@ class LoginView extends GetView<LoginController> {
             ),
           ],
           image: DecorationImage(
-            image: AssetImage('assets/images/google.jpg'),
+            image: AssetImage('assets/yade/img2.png'),
           )
         ),
       ),

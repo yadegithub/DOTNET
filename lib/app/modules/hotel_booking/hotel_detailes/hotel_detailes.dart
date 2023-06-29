@@ -800,7 +800,7 @@ class _HotelDetailesState extends State<HotelDetailes>
           crossAxisAlignment: CrossAxisAlignment.end,
           children: <Widget>[
             Text(
-              "\$${widget.hotelData.perNight}",
+              "${widget.hotelData.perNight}",
               textAlign: TextAlign.left,
               style: TextStyles(context).getBoldStyle().copyWith(
                     fontSize: 22,

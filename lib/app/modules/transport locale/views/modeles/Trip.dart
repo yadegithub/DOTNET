@@ -3,7 +3,7 @@ class Trip {
   DateTime startDate;
   //DateTime endDate;
   double budget;
-  String travelType;
+ // String travelType;
 
 
   Trip(
@@ -11,7 +11,7 @@ class Trip {
       this.startDate,
      // this.endDate,
       this.budget,
-      this.travelType
+     // this.travelType
       );
 
  Map<String, dynamic> toJson() => {
@@ -19,6 +19,6 @@ class Trip {
     'startDate': startDate,
     //'endDate': endDate,
     'budget': budget,
-    'travelType': travelType,
+    //'travelType': travelType,
   };
 }

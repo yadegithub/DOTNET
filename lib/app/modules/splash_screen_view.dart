@@ -63,6 +63,14 @@ class _SplashScreenViewState extends State<SplashScreenView> {
                 letterSpacing: 8.w,
                 fontSize: fontSize,
               ),
+            ),
+            Text(
+              'فليكسيتريب',
+              style: TextStyles.title.copyWith(
+                color: Colors.white,
+                letterSpacing: 8.w,
+                fontSize: fontSize,
+              ),
             )
           ],
         ),

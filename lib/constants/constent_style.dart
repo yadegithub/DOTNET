@@ -20,6 +20,6 @@ var mservicesubtitel=GoogleFonts.inter(
   fontSize: 10,fontWeight: FontWeight.w400,color: Color(0XFF8E8E8E)
 );
 var mPopulairdestination=GoogleFonts.inter(
-  fontSize: 14,fontWeight: FontWeight.w700,color: Colors.deepPurple.shade900
+  fontSize: 14,fontWeight: FontWeight.w700,color: Color(0xFF26A69A)
 );
 const double appPadding = 20.0;

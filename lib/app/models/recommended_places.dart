@@ -3,7 +3,7 @@ class  RecommandedPlaceModel{
   final String image;
    final double rating;
    final String location;
-   final String type;
+   //final String type;
    final  bool isFav;
    final double price;
    final int bedrooms;
@@ -15,7 +15,7 @@ class  RecommandedPlaceModel{
     required this.image,
     required this.location,
     required this.rating,
-    required this.type,
+   // required this.type,
     required this.isFav,
     required this.price,
     required this.bathrooms,
@@ -31,10 +31,10 @@ class  RecommandedPlaceModel{
 
 }
 List<RecommandedPlaceModel> recommendedplaces =[
-RecommandedPlaceModel(image: 'assets/images/img_destination_ambon.jpeg',
+RecommandedPlaceModel(image: 'assets/images/imgdestination5.jpg',
 location: "Noukchott",
 rating: 4.4,
-type: "House",
+//type: "House",
 isFav: true,
 price: 1222,
 bathrooms: 4,
@@ -42,10 +42,10 @@ bedrooms: 2,
 surface: 1.45,
 sale: 4
 ),
-RecommandedPlaceModel(image: 'assets/images/img_destination_ambon.jpeg',
-location: "Noudibou",
+RecommandedPlaceModel(image: 'assets/images/imgdestination6.jpg',
+location: "Adrar",
 rating: 4.4,
-type: "Appartement",
+//type: "Appartement",
 isFav: false,
 price: 1222,
 bathrooms: 4,
@@ -53,10 +53,10 @@ bedrooms: 2,
 surface: 1.45,
 sale: 4
 ),
-RecommandedPlaceModel(image: 'assets/images/img_destination_ambon.jpeg',
-location: "Noukchot",
+RecommandedPlaceModel(image: 'assets/images/imgdestination7.jpg',
+location: "zouwerat",
 rating: 4.4,
-type: "Villa",
+//type: "Villa",
 isFav: true,
 price: 1222,
 bathrooms: 4,
@@ -67,7 +67,7 @@ sale: 4
 RecommandedPlaceModel(image: 'assets/images/img_destination_ambon.jpeg',
 location: "Magtaa lhjar",
 rating: 4.4,
-type: "House",
+//type: "House",
 isFav: true,
 price: 1222,
 bathrooms: 4,
@@ -78,7 +78,7 @@ sale: 4
 RecommandedPlaceModel(image: 'assets/images/img_destination_ambon.jpeg',
 location: "Magtaa lhjar",
 rating: 4.4,
-type: "House",
+//type: "House",
 isFav: true,
 price: 1222,
 bathrooms: 4,
@@ -89,7 +89,7 @@ sale: 4
 RecommandedPlaceModel(image: 'assets/images/img_destination_ambon.jpeg',
 location: "Magtaa lhjar",
 rating: 4.4,
-type: "House",
+//type: "House",
 isFav: true,
 price: 1222,
 bathrooms: 4,
@@ -100,7 +100,7 @@ sale: 4
 RecommandedPlaceModel(image: 'assets/images/img_destination_ambon.jpeg',
 location: "Magtaa lhjar",
 rating: 4.4,
-type: "House",
+//type: "House",
 isFav: true,
 price: 1222,
 bathrooms: 4,
@@ -111,7 +111,7 @@ sale: 4
 RecommandedPlaceModel(image: 'assets/images/img_destination_ambon.jpeg',
 location: "Magtaa lhjar",
 rating: 4.4,
-type: "House",
+//type: "House",
 isFav: true,
 price: 1222,
 bathrooms: 4,

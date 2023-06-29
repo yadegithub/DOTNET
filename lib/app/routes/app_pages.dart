@@ -18,6 +18,7 @@ import 'package:flextrip/app/modules/order/views/order_detail_view.dart';
 import 'package:flextrip/app/modules/order/views/order_success_view.dart';
 import 'package:flextrip/app/modules/order/views/order_view.dart';
 import 'package:flextrip/app/modules/pin/bindings/pin_binding.dart';
+import 'package:flextrip/app/modules/pin/test11.dart';
 import 'package:flextrip/app/modules/pin/views/pin_view.dart';
 import 'package:flextrip/app/modules/register/bindings/register_binding.dart';
 import 'package:flextrip/app/modules/register/views/register_success_view.dart';
@@ -102,21 +103,21 @@ class AppPages {
       page: () => const OrderDetailView(),
       binding: OrderBinding(),
     ),
-    GetPage(
-      name: _Paths.ORDER_SUCCESS,
-      page: () => const OrderSuccessView(),
-      binding: OrderBinding(),
-    ),
-    GetPage(
+    // GetPage(
+    //   name: _Paths.ORDER_SUCCESS,
+    //   page: () => const OrderSuccessView(),
+    //   binding: OrderBinding(),
+    // ),
+     GetPage(
       name: _Paths.TOPUP,
-      page: () => const TopupView(),
+      page: () =>  test11(),
       binding: TopupBinding(),
     ),
-    GetPage(
-      name: _Paths.PIN,
-      page: () => const PinView(),
-      binding: PinBinding(),
-    ),
+    // GetPage(
+    //   name: _Paths.PIN,
+    //   page: () => const test11(),
+    //   binding: PinBinding(),
+    // ),
     GetPage(
       name: _Paths.TICKET_DETAIL,
       page: () => const TicketDetailView(),

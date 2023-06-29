@@ -3,7 +3,7 @@ import 'package:intl/intl.dart';
 String priceFormat(dynamic price) {
   return NumberFormat.currency(
     locale: 'id_ID',
-    symbol: 'IDR ',
+    symbol: 'AR ',
     decimalDigits: 0,
   ).format(price);
 }

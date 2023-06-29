@@ -10,7 +10,7 @@ Map<String, dynamic> destinationTicketData = {
     'cgk': [
       {
         'airport_departure_code': 'cgk',
-        'airport_departure_name': 'Nouakchott International Airport',
+        'airport_departure_name': 'Nouakchott InternationalAirport',
         'airport_departure_location': 'Nouakchott',
         'airport_arrival_code': 'lop',
         'airport_arrival_name': 'Nouadhibou International Airport',
